@@ -1,3 +1,6 @@
+[![Run Tests](https://github.com/twistingmercury/utils/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/twistingmercury/utils/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/twistingmercury/utils/branch/main/graph/badge.svg?token=4FKAKJS1H0)](https://codecov.io/gh/twistingmercury/utils)
+[![CodeQL](https://github.com/twistingmercury/utils/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/twistingmercury/utils/actions/workflows/codeql.yml)
 # Utils Package
 
 The `utils` package is a small collection of utility functions that provide common functionality for Go applications. It aims to simplify tasks such as showing version information, displaying help text, handling interrupt signals, and performing error handling. I decided to put this in its own importable package since I basically use this in all non-trivial projects.
@@ -26,12 +29,10 @@ package main
 
 import (
 	"context"
-	"log"
-	"net/http"
-
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
 	"github.com/twistingmercury/utils"
+	"log"
 )
 
 func main() {
