@@ -21,8 +21,8 @@ jobs:
       run: make
 
     - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v4
+      uses: codecov/codecov-action@v4.0.1
       with:
         file: coverage.out
         token: ${{ secrets.CODECOV_TOKEN }}
-        slug: twistingmercury/telemetry
+        slug: twistingmercury/utils
